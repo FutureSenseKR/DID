@@ -17,19 +17,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HomeController {
-
-	/*
-	@RequestMapping("/")
-	public String home(Locale locale, Model model) {
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
-		String formattedDate = dateFormat.format(date);
-		model.addAttribute("localeInfo", locale);
-		model.addAttribute("serverTime", formattedDate);
-		return "home";
-	}
-	*/
 	
 	@RequestMapping("/")
 	public String home() {
@@ -50,10 +37,7 @@ public class HomeController {
 	public String verifier() {
 		return "verifier";
 	}
-	
-	//
-	//
-	//
+
 	
 	@RequestMapping("wallet-worker")
 	public String walletWorker() {
